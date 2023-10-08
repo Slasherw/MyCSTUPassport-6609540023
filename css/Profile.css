@@ -155,10 +155,9 @@ ul.tprofile {
 }
  .acttext {
     display: flex;
-    text-align: left;
-    justify-content:left;
+    text-align: center;
+    justify-content: center;
     gap: 230px;
-    margin-left: 340px;
     color:mediumpurple;
  }
 
