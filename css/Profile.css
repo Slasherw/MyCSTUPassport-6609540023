@@ -3,6 +3,15 @@ body {
     font-family:cursive;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
 h1 {
     color: white;
     text-shadow: 2px 2px black;
@@ -10,39 +19,45 @@ h1 {
 }
 
 h2 {
-    color:white;
-    font-size: 20px;
     text-shadow: 1px 1px black;
+    text-align: center;
+    color: mediumpurple;
+    font-size: 50px;
+    border-bottom: 3px solid;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    gap:50px;
-    margin-bottom: 50px;
+.col-6 {  
+    display: block;
+    gap:5px;
+    margin-bottom: 5px;
 }
 
-.introduce {
+.col-11 {
+    display: block;
     border-radius: 30px;
-    font-size: 35px;
+    font-size: 30px;
     background-color: mediumslateblue;
     padding: 30px;
     color: white;
     transition-property: transform,background-color,text-shadow;
     transition-duration: 1s,1s,1s;
     transform-origin: center center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
 }
 
-.introduce:hover {
+.col-11:hover {
     transform: scale(1.1,1.1);
     text-shadow: 2px 1px black;
     background-color: mediumpurple;
 }
 
 img {
+    display :block;
     width: 400px;
     border-radius: 20px;
+    margin-left: 50px;
     transition-property: transform;
     transition-duration: 1s;
     transform-origin: center center;
@@ -53,14 +68,16 @@ img:hover {
 }
 
 .hamburgur {
-    display: flex;
+    float: left;
     align-items: center;
     justify-content:center;
     margin-bottom: 50px;
 }
 
 .Contacts {
-    margin-left: 60px;
+    float: left;
+    display: block;
+    margin-left: 10px;
     margin-right: 60px;
     border-radius: 30px;
     font-size: 25px;
@@ -83,7 +100,10 @@ img:hover {
 }
 
 video {
+    display: block;
+    float: left;
     border-radius: 20px;
+    margin-left: 20px;
     margin-right: 60px;
     transition-property: transform;
     transition-duration: 1s;
@@ -176,3 +196,10 @@ ul.tprofile {
    
  }
  
+ .late::after {
+    display: block;
+    content: "";
+    clear: both;
+    margin-bottom: 20px;
+
+ }
