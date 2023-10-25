@@ -30,6 +30,7 @@ h2 {
     display: block;
     gap:5px;
     margin-bottom: 5px;
+    justify-content: center;
 }
 
 .col-11 {
@@ -44,7 +45,7 @@ h2 {
     transform-origin: center center;
     justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin: 10px;
 }
 
 .col-11:hover {
@@ -55,12 +56,15 @@ h2 {
 
 img {
     display :block;
-    width: 400px;
     border-radius: 20px;
-    margin-left: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
     transition-property: transform;
     transition-duration: 1s;
     transform-origin: center center;
+    width: 60%;
+    height: auto;
+    justify-content: center;
 }
 
 img:hover {
@@ -68,6 +72,7 @@ img:hover {
 }
 
 .hamburgur {
+    display: block;
     float: left;
     align-items: center;
     justify-content:center;
@@ -78,7 +83,7 @@ img:hover {
     float: left;
     display: block;
     margin-left: 10px;
-    margin-right: 60px;
+    margin-right: 10px;
     border-radius: 30px;
     font-size: 25px;
     background-color: mediumslateblue;
@@ -103,11 +108,15 @@ video {
     display: block;
     float: left;
     border-radius: 20px;
-    margin-left: 20px;
-    margin-right: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
     transition-property: transform;
     transition-duration: 1s;
     transform-origin: center center;
+    width: 45%;
+    height: auto;
+    justify-content: center;
 }
 
 video:hover {
@@ -205,23 +214,26 @@ ul.tprofile {
 
  /* For mobile phones: */
 [class*="col-"] {width: 100%;}
-.hamburgur-p {width: 100%;}
 .Contacts-p {width: 100%;}
+video {width: 100%;}
+img {width: 100%;}
 
-/* For tablet: */
+/* For tablet: */ 
 @media only screen and (min-width: 600px) {
     .col-t-3 {width: 25%;}
-    .col-t-6 {width: 50%;}
-    .col-t-11 {width: 83.33%;}
-    .hamburgur-t {width: 50%;}
-    .Contacts-t {width: 66.66%;}
+    .col-t-6 {width: 40%;}
+    .col-t-11 {width: 100%;}
+    .Contacts-t {width: 50%;}
+    video {width: 40%;}
+    img {width:90%;}
 }
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
     .col-3 {width: 25%;}
-    .col-6 {width: 50%;}
-    .col-11 {width: 83.33%;}
-    .hamburgur {width: 50%;}
-    .Contacts {width: 66.66%;}
+    .col-6 {width: 40%;}
+    .col-11 {width: 30%;}
+    .Contacts {width: 50%;}
+    video {width: 40%;}
+    img {width:60%;}
 }
